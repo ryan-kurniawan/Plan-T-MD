@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "895702787207",
+    "project_id": "plantplanningyourplants-b7207",
+    "storage_bucket": "plantplanningyourplants-b7207.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:895702787207:android:4ac3156c7988224e7ec4d2",
+        "android_client_info": {
+          "package_name": "com.bangkit2022.plantplanningyourplants"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "895702787207-b99oag4aovpubg6rr9q4uuj3hrdj0cjr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC20wJB_Yb5KXLbkM-zp-ugEfyBKy50oik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "895702787207-b99oag4aovpubg6rr9q4uuj3hrdj0cjr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

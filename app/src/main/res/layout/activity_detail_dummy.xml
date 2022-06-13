@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abstract_plant_bg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tv_preview"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="@string/image_preview"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_color_greenout2"
+            app:layout_constraintEnd_toEndOf="@+id/tv_preview"
+            app:layout_constraintStart_toStartOf="@+id/tv_preview"
+            app:layout_constraintTop_toBottomOf="@id/tv_preview">
+
+            <ImageView
+                android:id="@+id/image_view_details"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/gardenia_plant"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/gallery_button"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            style="@style/CardView.Light"
+            android:backgroundTint="@color/light_green"
+            android:text="@string/gallery"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/plant_name_text_view"
+            app:layout_constraintEnd_toStartOf="@+id/identification_button"
+            app:layout_constraintHorizontal_bias="0.344"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/identification_button"
+            app:layout_constraintVertical_bias="0.0"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_camera_alt"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/plant_name_text_view"
+            app:layout_constraintEnd_toStartOf="@id/identification_button"
+            app:layout_constraintStart_toEndOf="@id/gallery_button"
+            app:layout_constraintTop_toBottomOf="@+id/card_view"
+            android:contentDescription="tambah"
+            />
+
+        <Button
+            android:id="@+id/identification_button"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/identification"
+            style="@style/CardView.Light"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/light_green"
+            app:layout_constraintBottom_toTopOf="@+id/plant_name_text_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_view"
+            />
+
+        <TextView
+            android:id="@+id/plant_name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:background="@drawable/button_color_greenout"
+            android:text="Gardenia"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/identification_button"
+            />
+
+        <TextView
+            android:id="@+id/description_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/black"
+            android:text="@string/plant_description"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plant_name_text_view"
+            />
+
+        <TextView
+            android:id="@+id/plant_description_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/button_color_green1"
+            android:text="Gardenia is a genus of flowering plants in the coffee family, Rubiaceae, native to the tropical and subtropical regions of Africa, Asia, Madagascar and Pacific Islands, and Australia. The genus was named by Carl Linnaeus and John Ellis after Dr. Alexander Garden (1730–1791), a Scottish-born American naturalist. Gardenias are evergreen shrubs and small trees growing to 1–15 metres (3.3–49.2 ft) tall. The leaves are opposite or in whorls of three or four, 5–50 centimetres (2.0–19.7 in) long and 3–25 centimetres (1.2–9.8 in) broad, dark green and glossy with a leathery texture. The flowers are solitary or in small clusters, white, or pale yellow, with a tubular-based corolla (botany) with 5–12 lobes (petals) from 5 to 12 centimetres (2.0 to 4.7 in) diameter. Flowering is from about mid-spring to mid-summer, and many species are strongly scented."
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description_text_view"
+            />
+
+        <TextView
+            android:id="@+id/latin_name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/latin_plant_name"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plant_description_text_view"
+            />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:id="@+id/plant_latin_name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_color_green1"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/white"
+            android:text="Gardenia jasminoides"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/latin_name_text_view"
+            />
+
+        <TextView
+            android:id="@+id/how_to_care_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:text="@string/how_to_take_care_of_plant"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plant_latin_name_text_view"
+            />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:id="@+id/how_to_care_of_plants_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_color_green1"
+            android:textColor="@color/white"
+            android:text="First, gardenias grow and bloom best when temperatures during the day are between 65 and 70ᵒF (18 to 21°C) and night temperatures are between 60 and 65ᵒF (15 to 18°C). Second, keep watering consistent. Gardenias will suffer if they dry out or are overwatered. Third, gardenias enjoy high humidity. Mist with water during dry spells. Fourth, fertilize with a slow-release fertilizer formulated for acid-loving plants such as rhododendrons and azaleas a couple of times during spring and summer. Do not fertilize in the fall, as this can cause a spurt of frost-tender growth. Fifth, routinely remove faded flowers to encourage more blooms. Sixth, bud drop can be caused by low humidity, over- or under-watering, insufficient light, and high temperatures."
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/how_to_care_text_view"
+            />
+
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:id="@+id/location_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/black"
+            android:text="@string/plant_buy_location_maps"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/how_to_care_of_plants_text_view"
+            />
+
+        <Button
+            android:id="@+id/location_button"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/light_green"
+            android:text="@string/click_to_check_location"
+            app:layout_constraintStart_toEndOf="@id/location_buy"
+            app:layout_constraintTop_toBottomOf="@+id/how_to_care_of_plants_text_view"
+            app:layout_constraintBottom_toTopOf="@+id/location_buy"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

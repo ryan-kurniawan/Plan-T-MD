@@ -1,0 +1,32 @@
+<resources>
+    <string name="application_name">Plan-T (Planning Your Plants)</string>
+    <string name="application_icon">Plan-T (Planning Your Plants)</string>
+    <string name="lets_start_identifying_your_plants">LETS START IDENTIFYING YOUR PLANTS!</string>
+    <string name="back_button">BACK TO PREVIOUS PAGE</string>
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
+    <string name="login_account">LOGIN ACCOUNT</string>
+    <string name="register_account">REGISTER ACCOUNT</string>
+    <string name="username">Username</string>
+    <string name="email_address">Electronic Mail (E-Mail) Address</string>
+    <string name="password">Password</string>
+    <string name="error_wrong_or_invalid_input_email_address">Wrong Or Invalid Input Email Address Data!</string>
+    <string name="error_wrong_or_invalid_input_password">Password Must Consist Of At Least 6 (Six) Characters!</string>
+    <string name="lets_come_check_and_identify_your_plants">Lets Come Check And Identify Your Plants!</string>
+    <string name="p2p_market_feature_will_be_coming_soon_text_view">P2P Market?\nThis Feature Will Be Coming Soon!\nPlease Stay Tune...</string>
+    <string name="you_can_contact_and_follow_us">You Can Contact And Follow Us At :</string>
+    <string name="email">Electronic Mail (E-Mail) : customerservicesupport@plan-t.com</string>
+    <string name="facebook">Facebook : @plan-t-planning_your_plants</string>
+    <string name="twitter">Twitter : @plan-t-planning_your_plants</string>
+    <string name="instagram">Instagram : @plan-t-planning_your_plants</string>
+    <string name="image_preview">PHOTO IMAGE PICTURE PREVIEW RESULT</string>
+    <string name="gallery">GALLERY</string>
+    <string name="identification">IDENTIFICATION</string>
+    <string name="plant_name">Plant Name</string>
+    <string name="plant_description">Plant Description</string>
+    <string name="latin_plant_name">Latin Plant Name</string>
+    <string name="how_to_take_care_of_plant">How To Take Care Of Plant</string>
+    <string name="plant_buy_location_maps">Want To Buy This Plant?</string>
+    <string name="click_to_check_location">CLICK TO CHECK LOCATION</string>
+    <string name="this_feature_will_be_coming_soon">This Feature Will Be Coming Soon! Stay Tune...</string>
+</resources>

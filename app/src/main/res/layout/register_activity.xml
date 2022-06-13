@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/abstract_plant_bg"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/img_back_register"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/back_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_btn_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/image_view"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/light_green"
+    />
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:SpinKit_Style="FadingCircle"
+        app:SpinKit_Color="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/image_view"
+    />
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="70dp"
+        android:contentDescription="@string/application_icon"
+        android:src="@drawable/plant_logo"
+        android:transitionName="logoLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+    />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/register_account"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@+id/image_view"
+        app:layout_constraintEnd_toEndOf="@+id/image_view"
+        app:layout_constraintTop_toBottomOf="@+id/image_view"
+    />
+
+    <com.bangkit2022.plantplanningyourplants.customview.AllEditText
+        android:id="@+id/edit_name_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:drawableStart="@drawable/icon_person"
+        android:hint="@string/username"
+        android:textColor="@color/black"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+    />
+
+    <com.bangkit2022.plantplanningyourplants.customview.AllEditText
+        android:id="@+id/edit_email_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/email_address"
+        android:textColor="@color/black"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/edit_name_register"
+        app:layout_constraintEnd_toEndOf="@+id/edit_name_register"
+        app:layout_constraintTop_toBottomOf="@+id/edit_name_register"
+        custom:email="true"
+    />
+
+    <com.bangkit2022.plantplanningyourplants.customview.AllEditText
+        android:id="@+id/edit_password_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/password"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/edit_email_register"
+        app:layout_constraintEnd_toEndOf="@+id/edit_email_register"
+        app:layout_constraintTop_toBottomOf="@id/edit_email_register"
+        custom:password="true"
+    />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_color_greenbg"
+        android:text="@string/register"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="@+id/edit_password_register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_password_register"
+        app:layout_constraintBottom_toBottomOf="parent"
+    />
+</androidx.constraintlayout.widget.ConstraintLayout>
